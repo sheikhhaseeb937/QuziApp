@@ -11,7 +11,7 @@
     <div class="parent bg-gradient-to-r from-red-500 to-blue-500 h-[100vh] pt-[40px]  ">
        
 <div class="formwarp  bg-black w-[50%] border-2 border-black h-[500px] mx-auto  p-[30px] rounded-[20px] ;">
-    
+  
 <div class="formInput  ">
     <h1 class="H1 text-white text-center font-bold text-[3rem]">Quiz Javascript</h1>
     <p class="text-white text-center font-bold ">Login</p>
@@ -30,6 +30,7 @@
 </div>
 
 </div>
+
 <div class="divQues hidden ">
 <div class="divinfo  border-2 border-white w-[100%] h-[90px] mx-auto ">
     <div class="nameEmail flex justify-between pl-3 pr-3 mt-2 ">
@@ -55,28 +56,29 @@
 
    <form >
    
-    <input onclick="match(this)"  name="fav_language" type="radio" class="inp w-[30px] h-[20px] mt-6 " value="A">
+    <input onclick="match(this),nextQues()"  name="fav_language" type="radio" class="inp w-[30px] h-[20px] mt-6 " value="A">
 <label onclick="seleitem(this)" class="option1 text-white text-[1.4rem] ml-5 "  name="fav_language" for="A"> HEllo</label>
 
 <br>
 
-<input onclick="match(this)" name="fav_language" type="radio" class="inp w-[30px] h-[20px] " value="b">
+<input onclick="match(this),nextQues()" name="fav_language" type="radio" class="inp w-[30px] h-[20px] " value="b">
 <label onclick="seleitem(this)" class="option2 text-white text-[1.4rem] ml-5 "  name="fav_language" for="b "> HEllo</label>
 <br>
-<input onclick="match(this)" name="fav_language" type="radio" class="inp w-[30px] h-[20px] " value="c">
+<input onclick="match(this),nextQues()"  name="fav_language" type="radio" class="inp w-[30px] h-[20px] " value="c">
 <label onclick="seleitem(this)" class="option3 text-white text-[1.4rem] ml-5 "  name="fav_language" for="c "> HEllo</label>
 <br>
-<input onclick="match(this)"  name="fav_language" type="radio" class="inp w-[30px]  h-[20px]" value="d">
+<input onclick="match(this),nextQues()"  name="fav_language" type="radio" class="inp w-[30px]  h-[20px]" value="d">
 <label onclick="seleitem(this)" class="option4 text-white text-[1.4rem] ml-5 "    name="fav_language" for="d "> HEllo</label>
 <br>
 </div>
   </form>
    
-    <div class="btn flex justify-end mt-[80px]">
+    <!-- <div class="btn flex justify-end mt-[80px]">
       <button onclick="nextQues()" class="border-2 border-red-500 text-white w-[80px] h-[40px] rounded-[10px] hover:text-white  hover:bg-red-500">NEXT</button>
-    </div>
+    </div> -->
    
 </div>
+
 <div class="result hidden">
   <p class="text-white font-bold text-[2rem] text-center">Result 50 out of</p>
  <p class="resultHeading text-white font-bold text-[5rem] text-center mt-[120px]  border-2 border-red-600 rounded-full">0</p>

@@ -1,5 +1,7 @@
 
-var form = document.querySelector('.formwarp')
+var form = document.querySelector('.formwarp').children[0]
+// var form2 =document.querySelector('.formwarp').children[1]
+console.log(form)
 var quziBody =document.querySelector('.divinfo')
 var inp =document.querySelector('.formInput')
 
@@ -14,6 +16,14 @@ var quesDiv = document.querySelector('.divQues')
 var rest = document.getElementById('btn1')
 console.log(rest)
 // console.log(h1Email)
+
+///inputs//
+var naMe = document.getElementById('name')
+var eMail = document.getElementById('email')
+var rolNo = document.getElementById('rollno')
+var univer= document.getElementById('university')
+
+
 
 function getData(){
    
@@ -41,6 +51,7 @@ function getData(){
     h1Roll.innerHTML = userRollno
     h1Univ.innerHTML = userUniv
     quesDiv.style.display = 'block'
+
 
 }
 ////question
@@ -101,7 +112,7 @@ var seleOpt =[
     optC: ' function fun( ){ }',
     optD: ' function( ){ }',
     answer : 'var fun = function bar{ }',
-     answer2 : ' function( ){ }'
+     answer2 : ' function fun( ){ }'
   },
 ]
 ques.innerHTML = seleOpt[0].questions
@@ -164,11 +175,17 @@ return;
 }
 
 
+
+
 function restart(){
-// form.style.display = "block"
-//  inp.style.display = "block"
 
 
+
+
+document.querySelector('.result').style.display="none"
+document.getElementById('btn1').style.display= "none"
+
+window.location.reload();
 }
 
 
