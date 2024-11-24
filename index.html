@@ -12,7 +12,7 @@
        
 <div class="formwarp  bg-black w-[50%] border-2 border-black h-[500px] mx-auto  p-[30px] rounded-[20px] ;">
   
-<div class="formInput  ">
+<div class="formInput   ">
     <h1 class="H1 text-white text-center font-bold text-[3rem]">Quiz Javascript</h1>
     <p class="text-white text-center font-bold ">Login</p>
 <input id="name" class="border-[3px] bg-black  border-[#1f62b9] w-[100%] mt-[10px] h-[50px] rounded-[50px] placeholder:text-center  text-white pl-3"  type="text"  placeholder="Enter your Name">
@@ -54,34 +54,39 @@
     <h1 class="question text-white font-bold text-[1.7rem]">Question</h1>
  
 
-   <form >
+   <form id="inputs" >
    
-    <input onclick="match(this),nextQues()"  name="fav_language" type="radio" class="inp w-[30px] h-[20px] mt-6 " value="A">
+    <input onclick="match(this)"  name="fav_language" type="radio" class="inp1 w-[30px] h-[20px] mt-6 " value="A">
 <label onclick="seleitem(this)" class="option1 text-white text-[1.4rem] ml-5 "  name="fav_language" for="A"> HEllo</label>
 
 <br>
 
-<input onclick="match(this),nextQues()" name="fav_language" type="radio" class="inp w-[30px] h-[20px] " value="b">
+<input onclick="match(this)" name="fav_language" type="radio" class="inp2 w-[30px] h-[20px] " value="b">
 <label onclick="seleitem(this)" class="option2 text-white text-[1.4rem] ml-5 "  name="fav_language" for="b "> HEllo</label>
 <br>
-<input onclick="match(this),nextQues()"  name="fav_language" type="radio" class="inp w-[30px] h-[20px] " value="c">
+<input onclick="match(this)"  name="fav_language" type="radio" class="inp3 w-[30px] h-[20px] " value="c">
 <label onclick="seleitem(this)" class="option3 text-white text-[1.4rem] ml-5 "  name="fav_language" for="c "> HEllo</label>
 <br>
-<input onclick="match(this),nextQues()"  name="fav_language" type="radio" class="inp w-[30px]  h-[20px]" value="d">
+<input onclick="match(this)"  name="fav_language" type="radio" class="inp4 w-[30px]  h-[20px]" value="d">
 <label onclick="seleitem(this)" class="option4 text-white text-[1.4rem] ml-5 "    name="fav_language" for="d "> HEllo</label>
 <br>
 </div>
   </form>
    
-    <!-- <div class="btn flex justify-end mt-[80px]">
-      <button onclick="nextQues()" class="border-2 border-red-500 text-white w-[80px] h-[40px] rounded-[10px] hover:text-white  hover:bg-red-500">NEXT</button>
-    </div> -->
+    <div class="btn flex justify-end mt-[80px]">
+      <button id="nextBtn" onclick="nextQues()" class="border-2 border-red-500 text-white w-[80px] h-[40px] rounded-[10px] hover:text-white  hover:bg-red-500">NEXT</button>
+    </div>
    
 </div>
 
-<div class="result hidden">
-  <p class="text-white font-bold text-[2rem] text-center">Result 50 out of</p>
- <p class="resultHeading text-white font-bold text-[5rem] text-center mt-[120px]  border-2 border-red-600 rounded-full">0</p>
+<div class="result hidden ml-[35%]">
+  
+ 
+
+<p class="text-white text-[1.5rem] ">Total Questions :<span id="tQues"> 10</span></p> 
+<p class="text-white text-[1.5rem]">Correct Answer :<span id="cAns"> 5</span></p> 
+<p class="text-white text-[1.5rem]">Wrong Answer: <span id="wAns"> 5</span></p>   
+<p class="text-white text-[1.5rem]">Total Number :  <span id="tNum"> 50</span> </p> 
 </div>
 
 <div id="btn1" class="  hidden ">
