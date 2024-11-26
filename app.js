@@ -50,18 +50,18 @@ function getData(){
     var userRollno  = document.getElementById('rollno').value
     var userUniv  = document.getElementById('university').value.toUpperCase()
     console.log(userName,userEmail,userRollno,userUniv)
-    // if(!userEmail || !userName || !userRollno || !userUniv){
-    //     alert("required fields are missing");
+    if(!userEmail || !userName || !userRollno || !userUniv){
+        alert("required fields are missing");
     
-    //     return;
-    //    }
-    //    var isValid = userEmail.indexOf("@gmail.com");
-    //    // console.log(isValid)
+        return;
+       }
+       var isValid = userEmail.indexOf("@gmail.com");
+       // console.log(isValid)
      
-    //    if (isValid == -1) {
-    //      alert("Wrong Email");
-    //      return;
-    //    }
+       if (isValid == -1) {
+         alert("Wrong Email");
+         return;
+       }
     inp.style.display = 'none'
     quziBody.style.display = 'block'
     h1Email.innerHTML = userEmail
